@@ -73,11 +73,11 @@ Hooks.on("renderPlaylistSoundConfig", (config, html, css) => {
       </div>
       <div class="form-group">
           <label>Fade-In Time</label>
-          <input type="number" name="flags.playback.fadein" step="any" min="0" value="${fadein || 0}">
+          <input type="number" name="flags.playback.fadein" step="any" min="0" value="${speed || 0}">
       </div>
       <div class="form-group">
           <label>Fade-Out Time</label>
-          <input type="number" name="flags.playback.fadeout" step="any" min="0" value="${fadeout || 0}">
+          <input type="number" name="flags.playback.fadeout" step="any" min="0" value="${speed || 0}">
       </div>
       `
     lastBox.after(checkboxHTML)
